@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+
+    height: 100vh;
+    background-color:#3b0044;
+}
+
+main{
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0px 2px 30px grey;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.bouton{
+
+    padding: 15px 100px;
+    margin:10px 4px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+
+}
+
+.bouton{
+    border:1px solid transparent; 
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    }
+    .bouton::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #f75bc8;
+    box-shadow: inset 0px 0px 0px #b6cdef;
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+    }
+    .bouton:hover::before {
+    width:100%;
+    }
+    .bouton::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #dfa8f5;
+    -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
+    transition: all 0.4s cubic-bezier(.7, .25, 0,1)
+    }
+    .bouton:hover::after {
+    width:100%;
+    }
+    .bouton:hover{
+    border-left:1px solid #b6cdef;
+    border-right:1px solid #60ecff;
+    }
+
+
+
+
+
+h3{
+    text-align: center;
+}
+
+article{
+    width: 100%;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+article:last-child{
+    margin-bottom: 0px;
+}
+
+span:not(#price):not(.money){
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 5px 9px;
+}
+
+#checkout{
+    justify-content: flex-end;
+}
+
+button{
+    margin-left: 15px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+}
+
+.fa-heart{
+    color: red;
+}
+
+#ex1{
+    width: 100%;
+}
+
+.chien{
+    width: 50px;
+    height: 50px;
+}
